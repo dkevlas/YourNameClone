@@ -1,0 +1,25 @@
+//MEDIA QUERIES
+
+@mixin mediaQuerie($bp){
+    @media screen and (min-width: map-get($breakpoint, $bp)) {
+        @content;
+    }
+}
+
+//LAYOUT
+@mixin layout{
+    .layout{
+        min-width: 300px;
+        padding: 0 5%;
+    }
+    @include mediaQuerie(medium){
+        .layout{
+            padding: 0 10%;
+        }
+    }
+    @include mediaQuerie(large){
+        .layout{
+            padding: 0 15%;
+        }
+    }
+}

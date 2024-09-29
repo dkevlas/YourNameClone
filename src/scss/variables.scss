@@ -1,0 +1,31 @@
+//COLORES
+$color-primary-default: #f8f8f8;
+$color-primary-contrast: #ffffff;
+$color-primary-muted: #dcdcdc;
+
+:root{
+    --color-primary-defualt: #{$color-primary-default};
+    --color-primary-contrast: #{$color-primary-contrast};
+    --color-primary-muted: #{$color-primary-muted};
+};
+
+//BREAKPOINTS
+$breakpoint:(
+    small: 0px,
+    medium: 640px,
+    large: 1024px,
+    xlarge: 1200px,
+    xxlarge: 1440px
+);
+
+//Z-INDEX
+$z-back: -1;
+$z-normal: 1;
+$z-element: 10;
+$z-fixed: 100;
+$z-popup: 500;
+$z-modal: 1000;
+
+//PADDING DE SECCIONES
+$margin-top: 100px;
+$margin-top-container: 50px;
