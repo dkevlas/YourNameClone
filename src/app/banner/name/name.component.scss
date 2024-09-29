@@ -1,0 +1,99 @@
+@import '../../../styles.scss';
+
+.container{
+    color: var(--color-primary-contrast);
+    height: clamp(9.375rem, 9.375rem + 7.813vw, 12.5rem);
+    margin-top: -3em;
+    min-width: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: $z-fixed;
+    margin-bottom: -5em;
+    //background-color: var(--color-primary-muted);
+    .content{
+        width: 100%;
+        height: 100%;
+        // position: relative;
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 5px;
+        .datos{
+            grid-area: 9/ 2/ span 3/ span 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            p{
+                font-size: clamp(0.8rem, 0.3rem + 1.333vw, 1.5rem);
+            }
+            .duracion{
+                font-weight: bold;
+            }
+        }
+        .likes{
+            display: flex;
+            grid-area: 6/ 2/ span 3/ span 4;
+            justify-content: space-around;
+            align-items: center;
+            svg{
+                outline: 2px solid var(--color-primary-contrast);
+                border-radius: 50%;
+                padding: .1em;
+                width: clamp(1.875rem, 1.546rem + 1.754vw, 3.125rem);
+                fill: var(--color-primary-contrast);
+                cursor: pointer;
+            }
+            .up{
+                svg{
+                    fill: greenyellow;
+                }
+            }
+        }
+        .name-japan{
+            grid-area: 2/ 2/ span 4/ span 12;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: end;
+            h2{
+                font-size: clamp(3rem, 0.857rem + 5.714vw, 6rem);
+            }
+        }
+        .name-spanish{
+            grid-area: 6/ 6/ span 3/ span 8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: end;
+            h3{
+                font-size: clamp(1.5rem, 0.321rem + 3.143vw, 3.15rem);
+            }
+            h4{
+                font-size: clamp(1rem, -0.071rem + 2.857vw, 2.5rem);
+            }
+        }
+    }
+}
+
+@include mediaQuerie(medium){
+    .container{
+        height: clamp(12.5rem, 7.292rem + 13.021vw, 15.625rem);
+        .content{
+            grid-template-rows: repeat(8, 1fr);
+            .datos{
+                grid-area: 3/ 2/ span 3/ span 6;
+            }
+            .likes{
+                grid-area: 6/ 5/ span 2/ span 3;
+            }
+            .name-japan{
+                grid-area: 2/ 8/ span 3/ span 6;
+            }
+            .name-spanish{
+                grid-area: 5/ 8/ span 3/ span 6;
+            }
+        }
+    }
+}

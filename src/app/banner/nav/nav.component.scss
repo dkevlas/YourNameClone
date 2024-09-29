@@ -1,0 +1,43 @@
+@import '../../../styles.scss';
+.nav{
+    min-width: 300px;
+    position: sticky;
+    width: 100%;
+    top: $margin-top-container;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    z-index: $z-fixed;
+    ul{
+        width: clamp(17.5rem, -10.179rem + 73.81vw, 56.25rem);
+        border-radius: 1em 0 0 1em;
+        outline: 2px solid var(--color-primary-defualt);
+        padding: .5em 3em .5em 1em;
+        display: flex;
+        gap: 1em;
+        color: var(--color-primary-defualt);
+        justify-content: space-around;
+        position: relative;
+        li{
+            text-wrap: nowrap;
+            font-size: clamp(0.8rem, 0.8rem + 0.222vw, 1rem);
+            cursor: pointer;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background-color: var(--color-primary-defualt);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 1em 0 0 1em;
+            //filter: blur(10px);
+            opacity: .2;
+            z-index: $z-back;
+        }
+    }
+}
