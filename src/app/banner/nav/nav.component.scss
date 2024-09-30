@@ -1,7 +1,7 @@
 @import '../../../styles.scss';
 .nav{
     min-width: 300px;
-    position: sticky;
+    position: absolute;
     width: 100%;
     top: $margin-top-container;
     text-align: center;
