@@ -95,3 +95,15 @@
         }
     }
 }
+
+@include mediaQuerie(large){
+    .container{
+        max-width: 1024px;
+        margin: auto;
+        .container-grid{
+            .clips{
+                justify-content: center;
+            }
+        }
+    }
+}

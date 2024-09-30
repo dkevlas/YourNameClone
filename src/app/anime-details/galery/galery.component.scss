@@ -68,3 +68,41 @@
         }
     }
 }
+@include mediaQuerie(medium){
+    .container{
+        .photos{
+            flex-direction: row;
+            width: 100%;
+            .galery{
+                flex-wrap: nowrap;
+                flex-basis: 0;
+                flex-grow: 3;
+                justify-content: space-between;
+            }
+            .more{
+                flex-basis: 0;
+                flex-grow: 1;
+            }
+        }
+    }
+}
+@include mediaQuerie(large){
+    .container{
+        width: 80%;
+        margin: 3em auto 0;
+        max-width: 1024px;
+        .photos{
+            .galery{
+                .img{
+                    flex-basis: 250px;
+                }
+            }
+        }
+        .story{
+            align-items: end;
+            .paragraphs{
+                text-align: end;
+            }
+        }
+    }
+}
