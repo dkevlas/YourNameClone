@@ -1,6 +1,24 @@
+@import '../../styles.scss';
 .container{
+    position: relative;
     .img1{
-        width: 500px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: absolute;
+        z-index: $z-back;
+        filter: blur(5px);
+        opacity: .5;
+        mask-image: linear-gradient(to top, black 80%, transparent);
     }
-    
+    .img2{
+        position: absolute;
+        bottom: 0;
+        z-index: $z-back;
+        width: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        filter: blur(5px);
+    }
 }
