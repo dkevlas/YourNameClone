@@ -60,9 +60,38 @@
 }
 @include mediaQuerie(medium){
     .container{
-        height: clamp(21.875rem, 19.243rem + 6.579vw, 25rem);
+        height: clamp(15.625rem, 12.5rem + 7.813vw, 17.5rem);
+        align-content: end;
         .container-grid{
-            background-color: yellow;
+            margin-top: 0;
+            padding-top: 2em;
+            grid-template-rows: repeat(6, 1fr);
+            .images{
+                grid-area: 1/ 1/ span 6/ span 3;
+                z-index: $z-element;
+                img{
+                    height: 100%;
+                }
+            }
+            .clips{
+                grid-area: 2/ 4/ span 1/ span 6;
+                gap: 1em;
+                justify-content: end;
+                button{
+                    padding: 0 1.5em;
+                }
+            }
+            .description{
+                position: relative;
+                grid-area: 4/ 3/ span 3/ span 6;
+                p{
+                    height: 100%;
+                    text-wrap: pretty;
+                    align-content: center;
+                    padding: 0 2em;
+                    max-width: 550px;
+                }
+            }
         }
     }
 }
