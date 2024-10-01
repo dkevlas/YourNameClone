@@ -21,7 +21,7 @@ Este proyecto es una **imitación y/o mejora** de un diseño web que encontré e
    - Resolución: 1026x1475
 
 4. **Laptop-Standard**  
-   - **[Laptop 1](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-01-Your-Name/Laptop-Standard.png)**
+   - **[Laptop Standard](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-01-Your-Name/Laptop-Standard.png)**
    - Resolución: 1440x1622
 
 5. **Desktop-Wide**  
