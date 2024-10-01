@@ -1,27 +1,45 @@
-# Yourname
+# Imitación y/o Mejora de un Diseño Web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+Este proyecto es una **imitación y/o mejora** de un diseño web que encontré en Pinterest. Aunque el diseño original estaba disponible solo en un solo modo de pantalla, decidí hacerlo **responsivo**, adaptándolo a diferentes pantallas: **celular**, **tablet**, y **desktop**.
 
-## Development server
+## Comparación de Diseños
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **[Diseño Original](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-01-Your-Name/Design-Original.jpg)**
 
-## Code scaffolding
+### Imitaciones por Tipo de Pantalla
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Mobile-Large**  
+   - **[iPhone XR/XS Max](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-01-Your-Name/Mobile-Large.png)**
+   - Resolución: 414x1941
 
-## Build
+2. **Mobile-Medium**  
+   - **[Galaxy S9/Note 8/S8](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-01-Your-Name/Mobile-Medium.png)**
+   - Resolución: 349x2186
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. **Tablet-Large**  
+   - **[iPad Pro (12.9-inch)](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-01-Your-Name/Tablet-Large.png)**
+   - Resolución: 1026x1475
 
-## Running unit tests
+4. **Laptop-Standard**  
+   - **[Laptop 1](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-01-Your-Name/Laptop-Standard.png)**
+   - Resolución: 1440x1622
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+5. **Desktop-Wide**  
+   - **[Large Screen](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-01-Your-Name/Desktop-Wide.png)**
+   - Resolución: 691x1334
 
-## Running end-to-end tests
+6. **Laptop-Personal**  
+   - **[Personal Laptop](https://my-design-imitations.s3.us-east-2.amazonaws.com/design-01-Your-Name/Screen-Personal.png)**
+   - Resolución: 1366x1608
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+### Mejoras realizadas:
+- Adaptado para **celulares**, **tablets**, y otras resoluciones.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Código del Proyecto
+
+1. **Clonar el repositorio** usando Git:
+
+   ```bash
+   git clone https://github.com/dkevlas/YourNameClone.git
+   ```
