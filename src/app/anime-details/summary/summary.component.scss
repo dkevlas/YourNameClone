@@ -79,6 +79,10 @@
                 justify-content: end;
                 button{
                     padding: 0 1.5em;
+                    transition: background .25s;
+                    &:hover{
+                        background-color: rgba($color: white, $alpha: .5);
+                    }
                 }
             }
             .description{

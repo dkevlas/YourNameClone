@@ -22,6 +22,9 @@
             text-wrap: nowrap;
             font-size: clamp(0.8rem, 0.8rem + 0.222vw, 1rem);
             cursor: pointer;
+            &:hover{
+                text-decoration: underline;
+            }
         }
         &::after{
             content: '';
